@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <algorithm>
 using namespace std;
 
 
@@ -117,6 +119,7 @@ int att6() {
     return 0;
 }
 
+
 int att7() {
     int a, b;
 
@@ -135,6 +138,27 @@ int att7() {
 }
 
 
+int att8() {
+    std::string palavra;
+
+    std::cout << "Digite uma palavra: ";
+    std::cin >> palavra;
+
+    std::string reverso = palavra;
+    std::reverse(reverso.begin(), reverso.end());
+
+    if (palavra == reverso) {
+        std::cout << palavra << " é um palíndromo." << std::endl;
+    } else {
+        std::cout << palavra << " não é um palíndromo." << std::endl;
+    }
+
+    return 0;
+}
+
+
+
+
 
 
 
@@ -146,10 +170,12 @@ int main(){
     //att4();
     //att5();
     //att6();
-    att7();
-    //att8();
+    //att7();
+    att8();
     //att9();
     //att10();
     //att11();
-
+    //att12();
+    //att13();
+    //att14();
 }
